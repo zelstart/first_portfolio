@@ -18,7 +18,7 @@ body {
 
 main {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     margin-top: 2%;
   }
 
@@ -30,6 +30,8 @@ main {
     background-color: var(--dark);
 }
 
+
+/* Containers */
 
 .box1 {
     display: inline-block;
@@ -53,6 +55,10 @@ main {
 }
 
 .box4 {
+    /* need to figure out how to put the text box on top of the images in work */
+    background-color: var(--accent);
+    color: var(--light2);
+    padding: 3px;
 
 }
 
@@ -121,6 +127,11 @@ h2 {
 
 }
 
+h3 {
+    color: var(--light2);
+    font-size: 12px;
+}
+
 p {
     color: var(--light2);
     margin-left: 5%;
@@ -151,8 +162,8 @@ border: 3px solid var(--accent);
 .mywork2 {
     display: flex;
     margin: 2% 5%;
-    width:50%;
-    height:25%;
+    width: 50%;
+    height: 25%;
     border: 3px solid var(--accent);
     
     }
