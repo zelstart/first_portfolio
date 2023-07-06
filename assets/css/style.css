@@ -1,0 +1,117 @@
+
+:root {
+    --dark: #231f20;
+    --light: #fedb7b;
+    --accent: #f48506;
+    --light2: #fff;
+}
+
+body {
+    display: grid;
+    margin:0px;
+    height:100vh;
+    width: 100vw;
+    align-items:center;
+    justify-content:center;
+    background: var(--dark);
+}
+
+
+.header {
+    position: sticky;
+    overflow: hidden;
+    padding: 15px;
+    background-color: var(--dark);
+}
+
+
+.box1 {
+    display: inline-block;
+    padding: 10px;
+    text-align: left;
+    border-right: 5px solid var(--light);
+    overflow: hidden;
+}
+
+.box2 {
+    display: inline-block;
+    margin:10px;
+}
+
+/* Nav */
+nav {
+    padding-top: 25px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+a:link {
+    font-size: 18px;
+    color: var(--light2);
+    text-decoration: none;
+    font-family: monospace;
+    font-style: italic;
+    letter-spacing: -0.05em;
+}
+
+a:visited {
+    color: var(--light2);
+}
+
+a:hover {
+    color: var(--accent);
+    background-color: #fedb7b;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+/* Positioning */
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+/* Heading and Text Elements */
+
+h1 {
+    margin-left: 1%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--light);
+}
+
+h1::first-letter {
+    font-size: 500%;
+    color: var(--accent);
+}
+
+h2 {
+    margin-left: 1%;
+    color: var(--accent)
+}
+
+p {
+    color: var(--light2);
+}
+
+.wide {
+    letter-spacing: 0.4em;
+}
+
+.tight {
+    letter-spacing: -0.05em;
+}
+
+/* Animation */
+
+
+/* Image Elements */
+
