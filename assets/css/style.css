@@ -58,7 +58,6 @@ main {
     background-color: var(--accent);
     color: var(--light2);
     padding: 3px;
-
 }
 
 /* Nav */
@@ -145,7 +144,8 @@ p {
 }
 
 /* Animation */
-/* Eventually want to add an animation to my name at the top of the screen */
+/* Eventually want to add an animation to my name at the top of the screen.
+Just something simple, the letters appearing one after another.*/
 
 /* Image Elements */
 
