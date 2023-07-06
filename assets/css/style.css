@@ -1,3 +1,7 @@
+/* Need to either center the h2 text in it's box, or stick it to the top */
+/* Need to add a picture to the about me */
+/* Need to add text boxes to the pictures in work */
+/* Need to add a banner to the top of the page */
 
 :root {
     --dark: #231f20;
@@ -23,7 +27,6 @@ main {
   }
 
 .header {
-
     overflow: hidden;
     padding: 15px;
     margin-top: 50px;
@@ -49,12 +52,8 @@ main {
     
 }
 
-.box3 {
-    display: flex;
-    border:var(--accent);
-}
 
-.box4 {
+.box3 {
     /* need to figure out how to put the text box on top of the images in work */
     background-color: var(--accent);
     color: var(--light2);
@@ -146,14 +145,14 @@ p {
 }
 
 /* Animation */
-
+/* Eventually want to add an animation to my name at the top of the screen */
 
 /* Image Elements */
 
 .mywork1 {
 display: flex;
 margin-left: 5%;
-width:30vw;
+width:40vw;
 height:auto;
 border: 3px solid var(--accent);
 
@@ -165,7 +164,7 @@ border: 3px solid var(--accent);
     width: 50%;
     height: 25%;
     border: 3px solid var(--accent);
-    
+
     }
 
 .brighten img {
