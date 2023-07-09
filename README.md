@@ -34,7 +34,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ### Screenshots
 
 ## Credits
-https://www.pexels.com for stock photos  
+https://www.pexels.com for free stock photos  
 https://thebrandsmen.com/css-image-hover-effects/   
 
 
