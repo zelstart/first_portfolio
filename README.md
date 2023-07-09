@@ -36,7 +36,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ## Credits
 https://www.pexels.com for free stock photos  
 https://thebrandsmen.com/css-image-hover-effects/   
-
+https://blog.logrocket.com/responsive-image-gallery-css-flexbox/ for flexbox image gallery code  
 
 ## License
 
