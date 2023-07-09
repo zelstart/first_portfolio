@@ -211,6 +211,7 @@ a:hover {
     border: 3px solid var(--accent)
   }
 
+  /* don't really want this, might change it*/
   .overlay {
     position: absolute;
     width: 100%;
