@@ -131,15 +131,6 @@ a:visited {
     color: var(--light2);
 }
 
-a:hover {
-    /* Temporarily removed because it kept applying the the images when trying to change from inline block to flex for some reason */
-    /* 
-    color: var(--accent);
-    background-color: #fedb7b;
-    padding: 5px;
-    border-radius: 5px;
-    */
-}
 
 
 /* Image Elements */
@@ -149,24 +140,6 @@ a:hover {
     height: auto;
     margin-left: 5%;
 }
-/* 
-.mywork1 {
-    display: flex;
-    flex: 0 0 50%;
-    flex-wrap:wrap;
-    margin-left: 5%;
-    border: 3px solid var(--accent);
-}
-
-.mywork2 {
-    display: flex;
-    flex: 0 0 25%;
-    flex-wrap: wrap;
-    margin: 2% 5%;
-    border: 3px solid var(--accent);
-    }
-
-*/
 
 .brighten img {
     -webkit-filter: brightness(50%);
