@@ -3,6 +3,7 @@
 /* Need to add a picture to the about me */
 /* Need to add text boxes to the pictures in work */
 /* Need to add a banner to the top of the page ? */
+/* Need to resize for mobile/tablets */
 
 :root {
     --bg: #302e2b;
@@ -20,13 +21,51 @@ body {
 }
 
 
-/* Resize for mobile */
+/*
+/* Resize for mobile and tablet */
+/* want to get the nav stuff to be pushed to the next line and centered */
+@media screen and (max-width: 425px) {
+    header {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    }
 
+
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        justify-content: center;
+        flex-flow: column wrap;
+        text-align: center;
+    }
+
+    h1 {
+        font-size:50%;
+    }
+
+    nav ul li { 
+    }
+
+    h2 {
+    }
+
+    p {
+        font-size:90%;
+    }
+
+    * {
+        
+    }
+}
 
 
 /* Containers */
 .header {
     display: flex;
+    flex-flow: row nowrap;
     width: 100vw;
     height:200px;
     background: var(--dark);
@@ -41,8 +80,6 @@ body {
     padding: 10px;
     text-align: left;
     width: 10%;
-    /* testing this? */
-    flex-basis:15%;
 }
 
 .right-content {
@@ -50,40 +87,32 @@ body {
     margin:1%;
     width: 50%;
     border-left: 3.5px solid var(--accent);
-    /* testing this? */
-    flex-basis:50%;
     
-}
-
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
 }
 
 .work-text {
     /* need to figure out how to put the text box on top of the images in work */
-    position: ??;
     background-color: var(--accent);
     color: var(--light2);
     padding: 3px;
 }
 
-
 /* Heading and Text Elements */
 h1 {
     margin-left: 1%;
+    font-size: 2em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: var(--light);
     letter-spacing: 0.4em;
 }
 
 h1::first-letter {
-    font-size: 500%;
+    font-size: 450%;
     color: var(--accent);
 }
 
 h2 {
+    font-size: 1.4em;
     margin-left: 1%;
     color: var(--accent);
     letter-spacing: 0.4em;
@@ -91,7 +120,7 @@ h2 {
 
 h3 {
     color: var(--light2);
-    font-size: 12px;
+    font-size: 1.2em;
 }
 
 p {
@@ -130,7 +159,6 @@ a:link {
 a:visited {
     color: var(--light2);
 }
-
 
 
 /* Image Elements */
@@ -184,7 +212,7 @@ a:visited {
     border: 3px solid var(--accent)
   }
 
-  /* don't really want this, might change it*/
+  /* don't really want this, might change it to look like the mockup*/
   .overlay {
     position: absolute;
     width: 100%;
