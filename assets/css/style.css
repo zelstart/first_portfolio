@@ -19,32 +19,34 @@ body {
     padding: 0px;
 }
 
-.header {
-    display: flex;
-    background: var(--dark);
-    border-bottom: 20px solid var(--accent2);
-}
-
 section {
     display: flex;
     margin: 5px;
 }
 
+.header {
+    display: flex;
+    background: var(--dark);
+    border-bottom: 20px solid var(--accent);
+    margin-bottom: 4%;
+}
+
+
+/* Flexbox stuff */
 .parent {
     display: flex;
     width: 100vw;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 5px 0 0 5px;
+    margin-bottom: 5%;
 }
 
 .hparent {
     display: flex;
     width: 100vw;
-    height: 200px;
+    height: 175px;
     margin: 5px 0 0 5px;
-    flex-direction: column;
     position: relative;
     justify-items: center;
     align-items: center;
@@ -52,15 +54,13 @@ section {
 }
 
 .hflex-left {
-    width: 30vw;
-    height:100px;
-    text-align: center;
+    width: 75%;
+
 }
 
 .hflex-right {
-
-    width: 30vw;
-    text-align: center;
+    width: 25%;
+    align-self: flex-end;
 }
 
 .flex-left {
@@ -76,27 +76,29 @@ section {
 
 .flex-container {
     display: flex;
-    margin-left:4%;
+    padding-left:4%;
 }
 
-.flex-child {
+.aboutmeflex {
+    display: flex;
     width: 70%;
 }  
 
-.flex-child:first-child {
-    margin-right: 20px;
-    width:20%;
-} 
+.proflex {
+    display: flex;
+}
 
-
+/* Text elements */
 
 h1 {
     display:inline-block;
-    margin-left: 1%;
-    font-size: 2em;
+    margin-left: 3%;
+    padding-top: 3%;
+    font-size: 3em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: var(--light);
     letter-spacing: 0.4em;
+    text-shadow: 5px 0px 10px #000;
 }
 
 .z {
@@ -121,6 +123,8 @@ p {
     margin-left: 5%;
 }
 
+
+/* Navigation */
 nav ul li {
     display: inline;
     list-style: none;
@@ -143,7 +147,7 @@ a:visited {
     color: var(--light2);
 }
 
-
+/* Images */
 .profile {
     display: inline-block;
     width: 200px;
@@ -157,10 +161,13 @@ a:visited {
 
 .projname {
     position:absolute;
-    padding: 2px;
-    background-color: #f48506;
+    padding: 3px;
+    padding-left: 20px;
+    background-color: var(--accent);
     color: var(--light2);
     bottom: 20px;
+    letter-spacing: 0.2em;
+    font-style: italic;
 }
 
 .image-gallery {
@@ -188,7 +195,7 @@ a:visited {
     height: 200px;
     vertical-align: middle;
     border-radius: 2px;
-    border: 3px solid var(--accent)
+    border: 4px solid var(--accent)
   }
 
 #project1 {
@@ -219,6 +226,10 @@ a:visited {
 
 /* Resize for smaller screens */
 @media screen and (max-width: 768px) {
+    .header {
+        border-bottom: 7px solid var(--accent);
+    }
+
     .hparent {
         display: flex;
         width: 100vw;
@@ -240,6 +251,7 @@ a:visited {
     .hflex-right {
         width: 50vw;
         text-align: center;
+        align-self: center;
     }
     
     #aboutme {
@@ -267,6 +279,10 @@ a:visited {
         align-items: center;
     }
 
+    #contactinfo {
+        text-align: center;
+    }
+
     .flex-container {
         flex-direction: column;
         align-items: center;
@@ -284,14 +300,26 @@ a:visited {
     h2 {
         font-size: 1em;
         text-align: center;
+        text-shadow: 1.15px .5px 0px var(--accent2);
     }
 
     p {
         font-size:90%;
     }
 
-    #contactinfo {
-        text-align: center;
+    .projname {
+        background-color: var(--accent2);
+    }
+    .profile {
+        border: 3px solid var(--accent2)
     }
 
+    .brighten {
+        -webkit-filter: brightness(100%);
+
+    }
+
+    .image-gallery li img {
+        border: 3px solid var(--accent2)
+      }
 }
