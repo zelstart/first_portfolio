@@ -138,6 +138,14 @@ a:visited {
 }
 
 
+.projname {
+    display: inline;
+    background-color: #f48506;
+    color: var(--light2);
+    position:relative;
+    bottom: 0px;
+}
+
 
 .profile {
     display: inline-block;
@@ -145,8 +153,6 @@ a:visited {
     height: auto;
     border: 3px solid var(--accent)
 }
-
-
 
 .image-gallery {
     display: flex;
