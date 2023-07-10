@@ -11,10 +11,11 @@
 <body>
 
     <!-- Header -->
-    <div class = "container">
+
         <header class="header">
+            <div class = "hcontainer">
         <h1>Zel Start</h1>
-    <!-- Navigation Bar -->
+    <!-- Navigation Links -->
         <nav>
             <ul>
             <li><a href=#aboutme>About Me</a></li>
@@ -22,23 +23,30 @@
             <li><a href=#contactme>Contact Me</a></li>
             </ul>
         </nav>
+
+            </div>
         </header>
-    </div>
 
 
     <!-- Main -->
     <!-- About Me -->
     <section id="aboutme">
-        <h2 class="left-side">about me</h2>
+       <h2 class="left-side"><div class="h2con">about <br> me</div></h2> 
             <div class="right-content"> 
-                <img class="profile" src="http://via.placeholder.com/200x200">    <!-- Need to figure out how to position this to be on the same line as the text -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt arcu non sodales neque. Elit ut aliquam purus sit amet luctus venenatis lectus. Aliquam faucibus purus in massa tempor. Mollis aliquam ut porttitor leo a diam sollicitudin tempor. Risus in hendrerit gravida rutrum quisque non tellus orci. Lectus sit amet est placerat in. </p>
-        </div>   
+                <div class="flex-container">
+
+                    <div class="flex-child"> <img class="profile" src="http://via.placeholder.com/200x200"> </div>  
+            
+            
+                    <div class = "flex-child"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt arcu non sodales neque. Elit ut aliquam purus sit amet luctus venenatis lectus. Aliquam faucibus purus in massa tempor. Mollis aliquam ut porttitor leo a diam sollicitudin tempor. Risus in hendrerit gravida rutrum quisque non tellus orci. Lectus sit amet est placerat in. </p> </div>
+                
+                </div>
+            </div>   
     </section>
 
     <!-- My Work -->
     <section id="mywork">
-        <h2 class="left-side">my work</h2>
+        <h2 class="left-side"><div class="h2con">my <br> work </div></h2>
             <div class="right-content brighten">
 
                 <div class="container">
@@ -77,7 +85,7 @@
 
     <!-- Contact Me -->
     <section id="contactme">
-        <h2 class="left-side">contact me</h2>
+        <h2 class="left-side"><div class="h2con">contact <br> me</div></h2>
             <div class="right-content">
             <nav>
                 <ul>

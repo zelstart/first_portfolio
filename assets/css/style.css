@@ -21,57 +21,8 @@ body {
 }
 
 
-/*
-/* Resize for mobile and tablet */
-/* want to get the nav stuff to be pushed to the next line and centered */
-@media screen and (max-width: 425px) {
-    header {
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    }
-
-
-}
-
-
-@media screen and (max-width: 768px) {
-    header {
-        justify-content: center;
-        flex-flow: column wrap;
-        text-align: center;
-    }
-
-    h1 {
-        font-size:50%;
-    }
-
-    nav ul li { 
-    }
-
-    h2 {
-    }
-
-    p {
-        font-size:90%;
-    }
-
-    * {
-        
-    }
-}
-
-
-/* Containers */
 .header {
-    display: flex;
-    flex-flow: row nowrap;
-    width: 100vw;
-    height:200px;
     background: var(--dark);
-    padding:0px;
-    justify-content: space-between;
-    align-items: flex-end;
     border-bottom: 20px solid var(--accent2);
 }
 
@@ -85,9 +36,8 @@ body {
 .right-content {
     display: inline-block;
     margin:1%;
-    width: 50%;
+    width: 80%;
     border-left: 3.5px solid var(--accent);
-    
 }
 
 .work-text {
@@ -97,8 +47,51 @@ body {
     padding: 3px;
 }
 
-/* Heading and Text Elements */
+section {
+    border: 2px solid red;
+    margin: 5px;
+}
+
+
+section div {
+    border: 2px solid rgb(47, 155, 49);
+}
+
+
+.flex-container {
+    display: flex;
+    margin-left:4%;
+}
+
+.flex-child {
+    width: 70%;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+    width:20%;
+} 
+
+
+
+.h2con {
+    border: 2px solid red;
+    position: relative;
+    top: 0;
+}
+
+
+.hcontainer {
+    display: flex;
+    border: 2px solid red;
+    width: 100vw;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: flex-end;
+}
+
 h1 {
+    display:inline;
     margin-left: 1%;
     font-size: 2em;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -130,25 +123,18 @@ p {
 
 
 
-/* Nav */
-header nav { 
-    display: flex;
-    position: relative;
-    bottom: 0;
-    /* Need to get the nav links to be aligned to the bottom of the header */
-}
-
 nav ul li {
+    display: inline;
     list-style: none;
-    display: inline-block;
-    margin: 10px;
-    padding-right:15px;
-    font-size: 18px;
+    padding-right:50px;
+    font-size: 1.2em;
     color: var(--light2);
     text-decoration: none;
     font-family: monospace;
     font-style: italic;
     letter-spacing: -0.05em;
+    text-align: justify;
+
 }
 
 a:link {
@@ -161,25 +147,12 @@ a:visited {
 }
 
 
-/* Image Elements */
+
 .profile {
     display: inline-block;
     width: 200px;
     height: auto;
     margin-left: 5%;
-}
-
-.brighten img {
-    -webkit-filter: brightness(50%);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-}
-
-.brighten img:hover {
-    -webkit-filter: brightness(100%);
 }
 
 
@@ -197,7 +170,7 @@ a:visited {
   }
 
   .image-gallery > li {
-    flex-basis: 350px; /* width: 350px; */
+    flex-basis: 350px; 
     list-style: none;
     position: relative;
     cursor: pointer;
@@ -212,3 +185,67 @@ a:visited {
     border: 3px solid var(--accent)
   }
 
+  .brighten img {
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.brighten img:hover {
+    -webkit-filter: brightness(100%);
+}
+
+
+/* Resize for smaller screens */
+@media screen and (max-width: 992px) {
+    .hcontainer {
+        display: flex;
+        border: 2px solid red;
+        width: 100vw;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: flex-end;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.25em;
+    }
+
+    p {
+        font-size:90%;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .hcontainer {
+        display: flex;
+        border: 2px solid red;
+        width: 100vw;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: flex-end;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    p {
+        font-size:90%;
+    }
+
+
+}
