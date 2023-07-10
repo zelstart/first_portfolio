@@ -20,43 +20,55 @@ body {
     padding: 0px;
 }
 
-
 .header {
+    display: flex;
     background: var(--dark);
     border-bottom: 20px solid var(--accent2);
 }
 
-.left-side {
-    display: inline-block;
-    padding: 10px;
-    text-align: left;
-    width: 10%;
-}
-
-.right-content {
-    display: inline-block;
-    margin:1%;
-    width: 80%;
-    border-left: 3.5px solid var(--accent);
-}
-
-.work-text {
-    /* need to figure out how to put the text box on top of the images in work */
-    background-color: var(--accent);
-    color: var(--light2);
-    padding: 3px;
-}
-
 section {
-    border: 2px solid red;
+    display: flex;
     margin: 5px;
 }
 
-
-section div {
-    border: 2px solid rgb(47, 155, 49);
+.parent {
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0 0 5px;
 }
 
+.hparent {
+    display: flex;
+    width: 100vw;
+    height: 100px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5px 0 0 5px;
+}
+
+.hflex-left {
+    width: 50%;
+    
+}
+
+.hflex-right {
+    width: 50%;
+}
+
+.flex-left {
+    width: 15vw;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.flex-right {
+    width: 83vw;
+    border-left: 3px solid var(--accent);
+}  
 
 .flex-container {
     display: flex;
@@ -74,22 +86,6 @@ section div {
 
 
 
-.h2con {
-    border: 2px solid red;
-    position: relative;
-    top: 0;
-}
-
-
-.hcontainer {
-    display: flex;
-    border: 2px solid red;
-    width: 100vw;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-content: flex-end;
-}
-
 h1 {
     display:inline;
     margin-left: 1%;
@@ -105,7 +101,7 @@ h1::first-letter {
 }
 
 h2 {
-    font-size: 1.4em;
+    font-size: 1.65em;
     margin-left: 1%;
     color: var(--accent);
     letter-spacing: 0.4em;
@@ -134,7 +130,6 @@ nav ul li {
     font-style: italic;
     letter-spacing: -0.05em;
     text-align: justify;
-
 }
 
 a:link {
@@ -152,15 +147,14 @@ a:visited {
     display: inline-block;
     width: 200px;
     height: auto;
-    margin-left: 5%;
 }
 
 
-/* Flexbox */
+
 .image-gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     gap: 10px;
   }
   
@@ -181,8 +175,17 @@ a:visited {
     max-width: 100%;
     height: auto;
     vertical-align: middle;
-    border-radius: 1px;
+    border-radius: 2px;
     border: 3px solid var(--accent)
+  }
+
+  .card1 {
+    width: 50%;
+    flex: 1 0 0;
+  }
+
+  .card2 {
+    width: 25%;
   }
 
   .brighten img {
