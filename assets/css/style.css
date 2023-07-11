@@ -225,7 +225,7 @@ a:visited {
 }
 
 /* Resize for smaller screens */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
     .header {
         border-bottom: 7px solid var(--accent);
     }
@@ -299,7 +299,7 @@ a:visited {
 
     h2 {
         font-size: 1em;
-        text-align: center;
+        text-align: left;
         text-shadow: 1.15px .5px 0px var(--accent2);
     }
 
@@ -351,8 +351,8 @@ a:visited {
         align-self: center;
     }
     
-    nav {
-        font-size: small
+    .nav {
+        font-size: .5em;
     }
 
 
@@ -361,8 +361,7 @@ a:visited {
     }
 
     h2 {
-        font-size: .8em;
-        text-align: center;
+        font-size: .9em;
         text-shadow: 1.15px .5px 0px var(--accent2);
     }
 
@@ -370,4 +369,24 @@ a:visited {
         font-size:90%;
     }
 
+    #contactinfo {
+        width: 100vw;
+        margin-left: -14%;
+        font-size: .7em;
+    }
+
+    #project1 img {
+        width:100%;
+        height: 200px;
+    }
+  
+    .image-gallery li img {
+        width: 100%;
+        height: 100px;
+    }
+
+    .projname {
+        font-size: 80%;
+        padding-left: 5px;
+    }
 }
