@@ -254,6 +254,11 @@ a:visited {
         align-self: center;
     }
     
+    .z {
+        color: var(--accent2);
+    }
+
+
     #aboutme {
         display: flex;
         width: 100vw;
@@ -295,6 +300,7 @@ a:visited {
 
     h1 {
         font-size: 1.4em;
+        color: var(--light2);
     }
 
     h2 {
@@ -310,6 +316,7 @@ a:visited {
     .projname {
         background-color: var(--accent2);
     }
+
     .profile {
         border: 3px solid var(--accent2)
     }
