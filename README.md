@@ -1,6 +1,8 @@
 # Portfolio
 
 ## Description
+A website containing information about myself (Zel Start-Pomeroy). Includes an about me section, a gallery of photos with links to my work, and a contact me section. 
+
 ### User Story
 ```
 AS AN employer
