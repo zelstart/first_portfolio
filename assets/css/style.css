@@ -227,7 +227,7 @@ a:visited {
 /* Resize for smaller screens */
 @media screen and (max-width: 1025px) {
     .header {
-        border-bottom: 7px solid var(--accent);
+        border-bottom: 7px solid var(--accent2);
     }
 
     .hparent {
@@ -325,9 +325,6 @@ a:visited {
 }
 
 @media screen and (max-width: 500px) {
-    .header {
-        border-bottom: 7px solid var(--accent);
-    }
 
     .hparent {
         display: flex;
