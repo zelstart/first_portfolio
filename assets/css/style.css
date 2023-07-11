@@ -31,6 +31,10 @@ section {
     margin-bottom: 4%;
 }
 
+div nav ul li a:hover {
+    color: var(--accent)
+}
+
 
 /* Flexbox stuff */
 .parent {
@@ -259,6 +263,9 @@ a:visited {
         color: var(--accent2);
     }
 
+    div nav ul li a:hover {
+        color: var(--accent2)
+    }
 
     #aboutme {
         display: flex;
