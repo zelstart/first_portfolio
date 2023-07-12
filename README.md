@@ -42,9 +42,9 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Credits
 https://www.pexels.com - free stock photos  
-https://thebrandsmen.com/css-image-hover-effects/ - some code to brighten the image gallery photos
+https://thebrandsmen.com/css-image-hover-effects/ - some code to brighten the image gallery photos  
 https://blog.logrocket.com/responsive-image-gallery-css-flexbox/ - some flexbox image gallery code  
-Jaytee Padilla - helped with getting the image gallery formatted properly
+Jaytee Padilla - helped with getting the image gallery formatted properly  
 
 ## License
 MIT
